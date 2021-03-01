@@ -28,7 +28,7 @@ import java.util.function.Consumer;
 
 public class Transactions extends JavaPlugin {
     public static Transactions INSTANCE;
-    private PacketProcessor processor = new PacketProcessor();
+    private final PacketProcessor processor = new PacketProcessor();;
 
     @Override
     public void onLoad() {
@@ -54,6 +54,7 @@ public class Transactions extends JavaPlugin {
 
         //Initiate PacketEvents
         PacketEvents.get().init(this);
+        processor.load();
 
     }
 
