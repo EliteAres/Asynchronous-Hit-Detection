@@ -1,0 +1,8 @@
+name: AsyncHitDetection
+version: 1.0
+author: [Ares, Retrooper]
+main: cc.patrone.dev.Transactions
+softdepend:
+  - ProtocolLib
+
+
